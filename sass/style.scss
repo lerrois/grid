@@ -106,9 +106,9 @@
 }
 
 .partners-wrapper {
-    width: 375px;
-    margin-left: auto;
-    margin-right: auto;
+    // width: auto;
+    // margin-left: auto;
+    // margin-right: auto;
 }
 
 .partners {
@@ -208,9 +208,8 @@
 }
 
 .wrapper-quotepart {
-    display: grid;
-    grid-template-columns: 1;
-    gap: 0px;
+    display: flex;
+    flex-direction: column;
     padding-left: 30px;
     padding-top: 30px;
     padding-right: 30px;
@@ -218,7 +217,7 @@
 }
 
 .quote-img {
-
+    object-fit: cover;
     height: 500px;
     background-image: url("./../images/Man.png");
     background-size: contain;
@@ -402,10 +401,6 @@
 
 @media (min-width: 1024px) {
 
-    .partners-wrapper {
-        width: 1024px;
-    }
-
     .cards-wrapper {
         grid-template-columns:repeat(3,1fr);
     }
@@ -426,7 +421,7 @@
     }
 
     .wrapper-quotepart {
-        grid-template-columns: 2;
+        flex-direction: row;
         padding-left: 60px;
         padding-top: 60px;
         padding-right: 60px;
@@ -456,6 +451,29 @@
 
 @media (min-width: 1920px) {
 
+    .wrapper-cards-section {
+        width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .quotesectionwrapper {
+        width: 1920px;
+        padding-left: 160px;
+        padding-right: 160px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .partners-wrapper {
+        width: 1920px;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
     .quote-img {
         height: 298px;
     }
@@ -478,5 +496,7 @@
     .partners {
         border-radius: 12px;
         overflow: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
