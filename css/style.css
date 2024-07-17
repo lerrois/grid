@@ -380,6 +380,7 @@
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     height: 228px;
+    width: 300px;
   }
   .for-768 {
     display: none;
@@ -403,6 +404,7 @@
 @media (min-width: 1440px) {
   .quote-img {
     height: 344px;
+    width: 600px;
   }
   .cards-wrapper {
     grid-template-columns: repeat(3, minmax(1fr, 268px));
