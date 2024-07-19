@@ -204,8 +204,8 @@
 .quote-img {
   object-fit: cover;
   height: 500px;
-  background-image: url("./../images/Man.png");
-  background-size: contain;
+  background-image: url("./../images/Man768.png");
+  background-size: cover;
   background-repeat: no-repeat;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -254,18 +254,25 @@
   justify-content: center;
 }
 
+.partners-section {
+  margin-top: 60px;
+}
+
 .recommends-wrapper-section {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 30px;
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: #F5F5FA;
 }
 
 .reco {
   margin-bottom: 30px;
+}
+
+.recommend-sec-wrap {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #F5F5FA;
 }
 
 .recommend-wrapper {
@@ -364,6 +371,8 @@
   }
   .recommends-wrapper-section {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .recommend-sec-wrap {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -375,24 +384,26 @@
   .cards-wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
+  .wrapper-quotepart {
+    flex-direction: row;
+    padding-left: 60px;
+    padding-top: 60px;
+    padding-right: 60px;
+  }
   .quote-img {
     display: inline-block;
+    background-image: url("./../images/Man1024.png");
+    background-size: cover;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
-    height: 228px;
-    width: 300px;
+    height: 528px;
+    width: 400px;
   }
   .for-768 {
     display: none;
   }
   .for-1024 {
     display: block;
-  }
-  .wrapper-quotepart {
-    flex-direction: row;
-    padding-left: 60px;
-    padding-top: 60px;
-    padding-right: 60px;
   }
   .recommends-wrapper-section {
     grid-template-columns: repeat(3, 1fr);
@@ -450,6 +461,14 @@
     overflow: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  }
+  .recommend-sec-wrap {
+    width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 160px;
+    padding-right: 160px;
+    margin-top: 60px;
   }
 }
 
