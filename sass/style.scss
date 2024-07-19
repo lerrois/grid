@@ -53,6 +53,7 @@
 }
 
 .servtext {
+    text-decoration: none;
     font-size: 14px;
     font-weight: 700;
     line-height: 17px;
@@ -80,6 +81,10 @@
 .blue {
     color: #24A3FF;
 }
+
+.servtext:hover {
+    color: #F0145A;
+ }
 
 .cardtext {
     color: #ffffff;
