@@ -192,13 +192,16 @@
   background-color: #000000;
 }
 
-.wrapper-quotepart {
-  display: flex;
-  flex-direction: column;
+.quotesectionwrapper {
   padding-left: 30px;
   padding-top: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
+}
+
+.wrapper-quotepart {
+  display: flex;
+  flex-direction: column;
 }
 
 .quote-img {
@@ -356,7 +359,7 @@
   .for-768 {
     display: block;
   }
-  .wrapper-quotepart {
+  .quotesectionwrapper {
     padding-left: 60px;
     padding-top: 60px;
     padding-right: 60px;
@@ -386,6 +389,8 @@
   }
   .wrapper-quotepart {
     flex-direction: row;
+  }
+  .quotesectionwrapper {
     padding-left: 60px;
     padding-top: 60px;
     padding-right: 60px;
@@ -445,10 +450,6 @@
     height: 298px;
   }
   .cards-wrapper {
-    padding-left: 160px;
-    padding-right: 160px;
-  }
-  .wrapper-quotepart {
     padding-left: 160px;
     padding-right: 160px;
   }
